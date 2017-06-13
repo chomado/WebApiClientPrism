@@ -1,14 +1,14 @@
 ﻿{
   "dependencies": {
+    "Autofac": "3.5.2",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "Prism.Autofac.Forms": "6.3.0",
     "Prism.Core": "6.3.0",
     "Prism.Forms": "6.3.0",
-    "Prism.Autofac.Forms": "6.3.0",
-    "Autofac": "3.5.2",
-    "Xamarin.Forms": "2.3.3.193"
+    "Xamarin.Forms": "2.3.4.247"
   },
   "frameworks": {
-    "uap10.0": {}
+    "uap10.0.10586": {}
   },
   "runtimes": {
     "win10-arm": {},
