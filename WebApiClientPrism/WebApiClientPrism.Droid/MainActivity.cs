@@ -8,7 +8,6 @@ using Android.Widget;
 using Android.OS;
 using Autofac;
 using Prism.Autofac.Forms;
-
 namespace WebApiClientPrism.Droid
 {
     [Activity(Label = "WebApiClientPrism", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -21,6 +20,7 @@ namespace WebApiClientPrism.Droid
 
             base.OnCreate(bundle);
 
+            CachedImageRenderer.Init();
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App(new AndroidInitializer()));
         }
