@@ -33,8 +33,6 @@ namespace WebApiClientPrism.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            if (parameters.ContainsKey("title"))
-                Title = (string)parameters["title"] + " and Prism";
         }
     }
 }
