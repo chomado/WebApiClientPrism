@@ -5,6 +5,24 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="WebApiClientPrism.Views.MainPage"
              Title="ちょまれぽ">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="フィルタ">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS,Android">MenuIcon.png</On>
+                    <On Platform="Windows">Assets/MenuIcon.png</On>
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        <ToolbarItem Text="投稿/設定">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS,Android">MenuIcon.png</On>
+                    <On Platform="Windows">Assets/MenuIcon.png</On>
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
     <Label Text="{Binding Title}" />
   </StackLayout>
