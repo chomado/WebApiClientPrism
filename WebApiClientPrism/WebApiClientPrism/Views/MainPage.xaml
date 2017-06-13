@@ -5,6 +5,8 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="WebApiClientPrism.Views.MainPage"
              Title="ちょまれぽ">
+    
+    <!-- ToolBar -->
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="フィルタ">
             <ToolbarItem.Icon>
@@ -23,7 +25,43 @@
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="{Binding Title}" />
-  </StackLayout>
+
+
+    <!-- ListView -->
+    <ListView>
+        <!-- 一番上の固定カラム -->
+        <ListView.Header>
+            <Grid BackgroundColor="LightSalmon"
+                  Padding="10">
+
+                <!-- 一番上の固定カラムの行と列の構成の定義 -->
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <!-- 一番上の固定カラムの中身 -->
+                <Label Text="image"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.RowSpan="2" />
+                <Label Text="text"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       Grid.RowSpan="2" />
+                <Label Text="account"
+                       TextColor="OrangeRed"
+                       Grid.Row="1"
+                       Grid.Column="1" />
+                <Label Text="time"
+                       Grid.Row="1"
+                       Grid.Column="2" />
+            </Grid>
+        </ListView.Header>
+    </ListView>
 </ContentPage>
